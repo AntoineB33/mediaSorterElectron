@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Max Size Image</title>
+    <style>
+        /* Style for the image container */
+        .image-container {
+            max-width: 100%; /* Ensure the container can grow to the viewport width */
+            max-height: 100vh; /* Ensure the container can grow to the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style for the image */
+        .max-size-image {
+            max-width: 100%; /* Image scales proportionally up to its original width */
+            max-height: 100%; /* Image scales proportionally up to its original height */
+            display: block;
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="max-size-image" src="../../images/i.jpeg" alt="Max Size Image">
+    </div>
+</body>
+</html>
